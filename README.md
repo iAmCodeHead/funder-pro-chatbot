@@ -3,6 +3,8 @@
 ## Tools
 🚀 Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, OpenAI API, Langchain, PostCSS, Tailwind CSS.
 
+### Production link
+https://funder-pro-chatbot.vercel.app/
 
 ### Features
 
@@ -59,6 +61,10 @@ You might encounter an error as shown in the screenshot below:
 
 
 ![funder-pro-error](https://github.com/iAmCodeHead/funder-pro-chatbot/assets/35177481/28f83961-77e6-48fe-a836-2989014b3905)
+
+This issue also happens in production
+![prod-error](https://github.com/iAmCodeHead/funder-pro-chatbot/assets/35177481/b039ca5a-d263-40ab-b695-6225c66613c2)
+
 
 
 Run the following command on your local environment:
