@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  ingest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    networks:
+      - app
+    ports:
+      - "3001:3001"
+    command: [sh, -c, 'npm run ingest']
+    volumes:
+      - .:/app
+      - /app/node_modules
+  funderpro:
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_CHAT_MODEL: ${OPENAI_CHAT_MODEL}
+      NODE_ENV: development
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    depends_on:
+      - ingest
+    networks:
+      - app
+    ports:
+      - "3000:3000"
+    command: [sh, -c, 'npm run dev']
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+networks:
+  app:
