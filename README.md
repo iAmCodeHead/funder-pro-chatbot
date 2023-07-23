@@ -34,6 +34,7 @@ Built-in feature from Next.js:
 ### Architecture
 
 Here is a diagram that explains the inner workings already handled by langChain
+![funder-pro-chatbot](https://github.com/iAmCodeHead/funder-pro-chatbot/assets/35177481/c1b119cf-f970-4329-8dea-a06ed9024a50)
 
 
 
@@ -56,7 +57,8 @@ https://github.com/hwchase17/langchainjs/issues/1930
 ```
 You might encounter an error as shown in the screenshot below:
 
--- insert screenshot
+
+![funder-pro-error](https://github.com/iAmCodeHead/funder-pro-chatbot/assets/35177481/28f83961-77e6-48fe-a836-2989014b3905)
 
 
 Run the following command on your local environment:
