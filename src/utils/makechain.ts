@@ -1,5 +1,5 @@
 import { ConversationalRetrievalQAChain } from 'langchain/chains';
-import { VectorStore } from 'langchain/dist/vectorstores/base';
+import type { VectorStore } from 'langchain/dist/vectorstores/base';
 import { OpenAI } from 'langchain/llms/openai';
 
 const ANSWER_LANGUAGE = process.env.ANSWER_LANGUAGE || 'English';
@@ -24,7 +24,7 @@ Helpful answer in markdown(Please answer in ${ANSWER_LANGUAGE}):`;
 export const makeChain = (vectorstore: VectorStore) => {
   const model = new OpenAI({
     temperature: 0.3, // increase temepreature to get more creative answers
-    modelName: OPENAI_CHAT_MODEL, //change this to gpt-4 if you have access
+    modelName: OPENAI_CHAT_MODEL, // change this to gpt-4 if you have access
   });
   const chain = ConversationalRetrievalQAChain.fromLLM(
     model,
@@ -32,7 +32,7 @@ export const makeChain = (vectorstore: VectorStore) => {
     {
       qaTemplate: QA_PROMPT,
       questionGeneratorTemplate: CONDENSE_PROMPT,
-      returnSourceDocuments: false, //The number of source documents returned is 4 by default
+      returnSourceDocuments: false, // The number of source documents returned is 4 by default
     },
   );
   return chain;
