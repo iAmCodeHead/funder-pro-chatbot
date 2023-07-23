@@ -67,8 +67,10 @@ Run the following command on your local environment:
 git clone --depth=1 https://github.com/iAmCodeHead/funder-pro-chatbot my-project-name
 cd my-project-name
 npm install
+cp .env.example .env
 ```
-
+Supply your OPENAI_API_KEY key in the ```.env``` file in your root directory.
+ 
 Then, you can run locally in development mode with live reload:
 
 ```shell
