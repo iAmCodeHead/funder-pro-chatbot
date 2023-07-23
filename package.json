@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "export": "next export",
     "build-prod": "run-s clean build export",
@@ -36,7 +35,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.7",
-    "tailwind-merge": "^1.10.0"
+    "tailwind-merge": "^1.10.0",
+    "tsx": "^3.12.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
