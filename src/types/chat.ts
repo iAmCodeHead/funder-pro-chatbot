@@ -1,4 +1,4 @@
-import { Document } from 'langchain/document';
+import type { Document } from 'langchain/document';
 
 export type Message = {
   type: 'apiMessage' | 'userMessage';

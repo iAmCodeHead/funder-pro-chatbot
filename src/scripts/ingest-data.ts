@@ -34,5 +34,5 @@ export const run = async () => {
 
 (async () => {
   await run();
-  console.info('ingestion complete');
+  console.info('ingestion complete...');
 })();
