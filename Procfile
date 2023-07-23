@@ -1,1 +1,1 @@
-web: sh -c 'npm run ingest && npm start'
+web: npm start
