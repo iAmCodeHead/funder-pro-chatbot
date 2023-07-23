@@ -50,7 +50,7 @@ git clone --depth=1 https://github.com/iAmCodeHead/funder-pro-chatbot my-project
 cd my-project-name
 docker compose up
 ```
-This will spin up the application. however, there is a known issue with faiss-node dusing containerization here:
+This will spin up the application. however, there is a known issue with faiss-node during containerization here:
 
 ```
 https://github.com/hwchase17/langchainjs/issues/1930
