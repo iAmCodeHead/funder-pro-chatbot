@@ -67,7 +67,7 @@ This issue also happens in production
 
 
 
-Run the following command on your local environment:
+To run the project in your local environment without the issue above, follow command below:
 
 ```shell
 git clone --depth=1 https://github.com/iAmCodeHead/funder-pro-chatbot my-project-name
